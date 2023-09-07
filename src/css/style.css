@@ -1,0 +1,12 @@
+input[type='checkbox'] ~ label {
+  margin-top: 7px;
+}
+
+.formulate-input[data-type=checkbox] {
+  margin-bottom: 0;
+}
+
+.masthead {
+  margin-top: 3em; 
+  margin-bottom: 3.8em;
+}

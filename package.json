@@ -1,0 +1,25 @@
+{
+  "name": "html-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@braid/vue-formulate": "^2.5.3",
+    "@vue/composition-api": "^1.4.7",
+    "@vue/runtime-dom": "^3.3.4",
+    "core-js": "^3.6.5",
+    "vee-validate": "^4.5.9",
+    "vue": "^2.5.13",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@formkit/vue": "^1.0.0-beta.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
