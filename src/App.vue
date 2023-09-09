@@ -19,10 +19,7 @@
         </a>
       </nav>
 
-      <a
-        class="btn btn-outline-info"
-        href="https://json-generator-dist.glitch.me/"
-      >
+      <a class="btn btn-outline-info" href="https://json-generator.glitch.me/">
         Brand Style Generator
       </a>
     </div>

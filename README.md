@@ -1,5 +1,23 @@
-# module-generator
+# Module Code Generator
 
-Generates a boilerplate code for users to use when creating Visual Editor modules. This will cut down on manual work and errors.
+> Uses Vue.JS framework
 
-https://module-generator-dist.glitch.me/
+## Project setup
+
+```
+npm install
+```
+
+## Run the Vue dev server (http://localhost:8080)
+
+```
+npm run serve
+```
+
+## Compiles and minifies for production
+
+```
+npm run build
+```
+
+Final files for upload to website is located in `dist` folder
