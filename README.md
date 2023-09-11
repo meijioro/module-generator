@@ -2,6 +2,8 @@
 
 > Uses Vue.JS framework
 
+[DEMO](https://module-generator-dist.glitch.me/)
+
 ## Project setup
 
 ```
