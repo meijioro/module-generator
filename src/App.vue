@@ -3,21 +3,7 @@
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom box-shadow"
     >
-      <h5 class="my-0 mr-md-auto font-weight-normal text-white">Epsilon</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a
-          class="p-2 text-white"
-          href="http://github01.epsilon.com/harmony/HarmonyVisualEditorModules/wiki#development"
-        >
-          Documentation
-        </a>
-        <a
-          class="p-2 text-white"
-          href="https://automation.epsilon.com/OSG/VisualEditorDeveloperGuide/Content/Assets?Templateid=25"
-        >
-          VE Developer Guide
-        </a>
-      </nav>
+      <h5 class="my-0 mr-md-auto font-weight-normal text-white">Company</h5>
 
       <a class="btn btn-outline-info" href="https://json-generator.glitch.me/">
         Brand Style Generator
