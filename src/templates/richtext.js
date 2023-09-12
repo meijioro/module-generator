@@ -1,6 +1,6 @@
 import { toTitleCase } from '../utilities/string';
 
-function getBrandStyle(data, prop, default_val) {
+const getBrandStyle = (data, prop, default_val) => {
   const {group_id, is_standard, brand_style, module_id, brand_name_id} = data;
   let { html_tag } = data;
   let val = "";

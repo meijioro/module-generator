@@ -3,7 +3,7 @@
  * @param {*} num 
  * @returns
  */
-function trWrap(num) {
+const trWrap = (num) => {
   // less than 2 items do nothing
   if (num < 2) { return '[ELEMENT HERE]'}
   let arr = [];
@@ -25,7 +25,7 @@ function trWrap(num) {
  * @param {boolean} is_top_level 
  * @returns 
  */
-function two_col(has_gutter, is_top_level, flip, elementRows) {
+const two_col = (has_gutter, is_top_level, flip, elementRows) => {
   let width = '50%';
   if (has_gutter) {
     width = `${ is_top_level ? '48.333333%' : '{{#if hide_gutter}}50%{{else}}48.333333%{{/if}}' }`;
@@ -67,7 +67,7 @@ ${( () => {
  * @param {boolean} is_top_level 
  * @returns 
  */
-function three_col(has_gutter, is_top_level, elementRows) {
+const three_col = (has_gutter, is_top_level, elementRows) => {
   //let width = `${is_top_level ? '213.33' : '{{#if full_boolean}}200{{else}}213.33{{/if}}'}`; //33.333333%
   let width = '33.333333%';
 
@@ -124,21 +124,10 @@ function three_col(has_gutter, is_top_level, elementRows) {
  * @returns 
  */
 function four_col(has_gutter, is_top_level, elementRows) {
-  // let width = '50%';
-  // //let width = side_margins ? 150 : 160;
-  // let gutter_html = '';
-
-  // if (has_gutter) {
-  //   width = `${is_top_level ? '48.0891719745%' : '{{#if hide_gutter}}50%{{else}}48.0891719745%{{/if}}'}`;
-  //   //width = side_margins ? 141 : 151;
-  //   gutter_html = `
-  //             ${!is_top_level ? '{{#ifNone hide_gutter}}' : ''}
-  //             <!-- gutter -->
-  //             <td width="12" valign="top" style="padding: 0px; vertical-align: top; width: 12px;"><img src="https://images.harmony.epsilon.com/ContentHandler/images?id=3f67ada7-a01e-4c02-ab71-8b46fd3106ae" width="12" height="20" style="display: block;" border="0" alt=""/></td>
-  //             <!-- end gutter -->
-  //             ${!is_top_level ? '{{/ifNone}}' : ''}
-  //   `;
-  // }
+  // static widths
+  // side_margins ? 150 : 160
+  // if gutter ? 48.0891719745%
+  // if gutter + side_margins ? 141 : 151
 
   let colpad = function(dir) {
     if (is_top_level && has_gutter) {
@@ -203,7 +192,7 @@ function four_col(has_gutter, is_top_level, elementRows) {
  *
  * @returns
  */
-function htmlContent(data, is_top_level) {
+const htmlContent = (data, is_top_level) => {
   const { module_id, module_name, side_margins, column_num, gutter, flip, elementRows } = data;
   const id_no_dash = module_id.replace('-', '');
 
@@ -270,7 +259,7 @@ ${( () => {
  * @param {boolean} is_top_level 
  * @returns 
  */
-function hbsLayout(data, is_top_level) {
+const hbsLayout = (data, is_top_level) => {
   const { module_id, module_name, custom_css, flip, gutter, side_margins } = data;
   const id_no_dash = module_id.replace('-', '');
   const colorPattern = "^#([0-9a-fA-F]{6}){1,2}$|^\\$\\{?([a-zA-Z0-9_.-]*)}";
@@ -429,7 +418,7 @@ ${(() => {
  * @param {boolean} is_top_level 
  * @returns string
  */
-function topLevelLayout(data, is_top_level) {
+const topLevelLayout = (data, is_top_level) => {
   return `
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">

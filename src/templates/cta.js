@@ -1,12 +1,11 @@
 import { toTitleCase } from '../utilities/string';
 
-function getBrandStyle(data, prop, default_val) {
+const getBrandStyle = (data, prop, default_val) => {
   const {group_id, is_standard, brand_style, module_id, brand_name_id} = data;
   let val = "";
 
   // standard module
   if (is_standard) { 
-
     //pull styles from brand
     if (brand_style) {
       val = `{{{brandvalue brand.custom_modules brand.cta.${prop} "${module_id}" "${group_id}_cta_${prop}" "${default_val}"}}}`;
@@ -1002,7 +1001,7 @@ ${(() => {
  * @param {*} is_static 
  * @returns 
  */
-function text_version(group_id, cta_design_type, cta_icon, style, is_static, is_standard) {
+const text_version = (group_id, cta_design_type, cta_icon, style, is_static, is_standard)  => {
   return `<!-- start BOX CTA -->${!is_static ? '{{! if fixed width, check if side margins, if side margins check if less than max width, if not then force 100% to not break layout, no checking full width max cause validation is on field }}' : ''}
           <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="${style.cta_width}" class="${style.table_class}">
             <tr>
